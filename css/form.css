@@ -206,7 +206,6 @@ body{
     margin-right: 20px;
 }
 
-
 .uhf{
     margin-right: 20px;
 }
@@ -215,6 +214,14 @@ body{
     margin-right: 20px;
 }
 
+.floures div{
+    display: flex; 
+    justify-content: center;
+}
+.light div{
+    display: flex; 
+    justify-content: center;
+}
 .seventh-row{
     display: flex;
     padding-top: 10px;
@@ -246,14 +253,34 @@ body{
 .polar{
     margin-right: 30px;
 }
+
+.polar div{
+    display: flex; 
+    justify-content: center;
+}
 .maritime{
     margin-right: 30px;
+}
+
+.maritime div{
+    display: flex; 
+    justify-content: center;
 }
 .jungle{
     margin-right: 30px;
 }
+
+.jungle div{
+    display: flex; 
+    justify-content: center;
+}
 .desert{
     margin-right: 30px;
+}
+
+.desert div{
+    display: flex; 
+    justify-content: center;
 }
 .jacket{
     margin-right: 30px;
@@ -299,6 +326,11 @@ body{
 
 .dinges{
     margin-right: 20px;
+}
+
+.dinges h3{
+    margin-right: 10px;
+    width: 50px;
 }
 .capacity{
     margin-right: 20px;
@@ -426,6 +458,9 @@ body{
         display: block;
     }
 
+    .first-radio-grp{
+        margin-right: 0;
+    }
     .first-radio-grp div{
         display: block;
     }
@@ -459,13 +494,96 @@ body{
         margin-left: 0;
     }
 
-    .polar{
+    .polar {
         display: flex;
+        margin-right: 0;
+    }
+
+    .polar div {
+        display: inline;
+        margin-left: 53px;
+    }
+
+    .desert {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .desert div {
+        display: inline;
+        margin-left: 43px;
+    }
+
+    .maritime {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .maritime div {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .jungle {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .jungle div {
+        display: inline;
+        margin-left: 44px;
+    }
+
+    .light {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .light div {
+        display: inline;
+        margin-left: 54px;
+    }
+
+    .floures {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .floures div {
+        display: inline;
+        margin-left: 34px;
+    }
+
+    .light2 {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .light2 div {
+        display: inline;
+        margin-left: 74px;
+    }
+
+    .floures2 {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .floures2 div {
+        display: inline;
+        margin-left: 74px;
     }
     .eight-row{
         display: block;
     }
 
+    .dinges h3{
+        margin-right: 10px;
+        width: 50px;
+    }
+    .dinges{
+        margin-bottom: 10px;
+    }
     .eight-row .number {
         margin-bottom: 10px;
     }
