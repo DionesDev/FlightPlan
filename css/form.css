@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: telegraf-bold;
+    src: url('/assets/fonts/PPTelegraf-UltraBold.otf');
+}
+
+@font-face {
+    font-family: telegraf-regular;
+    src: url('/assets/fonts/PPTelegraf-Regular.otf');
+}
+@font-face {
+    font-family: telegraf-light;
+    src: url('/assets/fonts/PPTelegraf-UltraLight.otf');
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+ scroll-behavior: smooth;
+ color: #FFFFFF;
+ font-family: 'telegraf-regular', sans-serif;
+ text-transform: uppercase;
+ overflow-x: hidden;
+}
+
+input[type="text"], input[type="number"],input[type="time"],input[type="checkbox"], input[type="date"], #exampleFormControlTextarea1 {
+    background:  rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+    color: #FFFFFF; 
+}
+
+input[type="text"]:focus,input[type="date"]:focus, #exampleFormControlTextarea1:focus{
+    background:  rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 50px 100px;
+    background-image: url('/assets/img/mapBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'telegraf-regular', sans-serif;
+}
+
+.form-container{
+    border: solid 2px #FFFFFF;
+    padding: 10px 5px;
+    background:  rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.second-container-border{
+    border: solid 2px #FFFFFF;
+    padding: 10px 30px;
+}
+.header{
+    display: flex;
+}
+
+.arrow-back{
+    width: 50px;
+    height: 50px;
+    
+}
+.form h1{
+    text-align: center;
+    font-family: 'telegraf-bold', sans-serif;
+}
+
+.form-title{
+    text-align: center;
+    font-family: 'telegraf-regular', sans-serif;
+    border-bottom: solid 1px #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.destination{
+    display: flex;
+    /* border-bottom: solid 1px #FFFFFF; */
+}
+
+.labels{
+
+    width: 15%;
+}
+
+.textarea{
+    width: 85%;
+}
+
+.flying-type{
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.type-fields{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.line{
+    border-bottom: solid 1px #FFFFFF;
+}
+
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.first-row-part1{
+    display: flex;
+
+    width: 50%;
+}
+
+.meas-type{
+    margin-right: 200px;
+}
+
+.flight-rules{
+    margin-left: 35px;
+    margin-right: 200px;
+}
+.first-row-part2{
+    display: flex;
+    width: 50%;
+}
+.second-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.long-line{
+    width: 10px;
+    height: 10px;
+    color: #FFFFFF;
+}
+
+.third-row{
+    display: flex;
+    padding-top: 10px;
+}
+
+.departure-aero{
+    margin-right: 120px;
+}
+
+
+.fourth-row{
+    display: flex;
+    padding-top: 10px;
+}
+
+.cruising-speed{
+    margin-right: 130px;
+}
+
+.level{
+    margin-right: 120px;
+}
+
+.fifth-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.sixth-row{
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.group-one{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 20px;
+}
+
+
+.uhf{
+    margin-right: 20px;
+}
+
+.vhf{
+    margin-right: 20px;
+}
+
+.seventh-row{
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+.first-radio-grp{
+    margin-right: 100px;
+}
+
+.first-radio-grp1{
+    display: flex;
+}
+.survival{
+    margin-right: 30px;
+}
+
+.survival-label{
+    display: block; 
+    width: 180px; 
+    margin-left: 30px;
+}
+
+.survival-input{
+    margin-right: 20px;
+}
+.polar{
+    margin-right: 30px;
+}
+.maritime{
+    margin-right: 30px;
+}
+.jungle{
+    margin-right: 30px;
+}
+.desert{
+    margin-right: 30px;
+}
+.jacket{
+    margin-right: 30px;
+}
+
+.eight-row{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: aqua; */
+}
+
+.nineth-row{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.acm{
+    margin-bottom: 10px;
+}
+
+.remarks{
+    margin-bottom: 10px;
+}
+
+.tenth-row{
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.color-field{
+    display: flex;
+}
+
+.dinges{
+    margin-right: 20px;
+}
+.capacity{
+    margin-right: 20px;
+}
+
+.cover{
+    margin-right: 20px;
+}
+
+.number{
+    margin-right: 20px;
+}
+.empty-box{
+    width: 30%;
+    border: solid 1px #FFFFFF;
+}
+
+.extra-info{
+    width: 70%;
+    border: solid 1px #FFFFFF;
+    padding: 10px;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 80px;
+    width: 250px;
+    font-size: 25px;
+    font-family: 'telegraf-bold', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-color: none;
+    border: none;
+    background-color: #e1bf3e;
+    color: #FFFFFF;
+    box-shadow: inset 6px -6px 10px 0 #A16C15;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        padding: 30px 50px;
+        overflow-x: hidden;
+    }
+
+    .labels{
+        width: 35%;
+    }
+
+    .textarea{
+        width: 60%;
+    }
+
+    .first-row{
+        display: block;
+    }
+
+    .first-row-part1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .meas-type {
+        margin-right: 20px;
+    }
+    .first-row-part2{
+        width: 100%;
+    }
+
+    .flight-rules{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .type-of-flight .form-label{
+        margin-bottom: 0;
+    }
+
+    .second-row{
+        display: block;
+    }
+
+    .third-row{
+        display: block;
+    }
+
+    .fourth-row{
+        display: block;
+    }
+
+    .fifth-row{
+        display: block;
+    }
+
+    .sixth-row{
+        display: block;
+    }
+
+    .sixth-row .group-one{
+        display: block;
+    }
+
+    .seventh-row{
+        display: block;
+    }
+
+    .first-radio-grp div{
+        display: block;
+    }
+
+    .first-radio-grp-2 div{
+        display: block;
+    }
+
+    .survival-label{
+        display: block; 
+        width: 180px; 
+        margin-left: 0;
+    }
+
+    .survival-input{
+        margin-left: 0;
+    }
+
+    .eight-row{
+        display: block;
+    }
+
+}

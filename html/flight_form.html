@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <main class="form">
+    <div class="header">
+      <a href="/html/index.html"> <svg class="arrow-back" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+      </svg></a>
+     
+      <h1>AVC FLIGHT PLANNER</h1>
+    </div>
+    <form class="form-container" novalidate>
+      <div class="second-container-border">
+        <h2 class="form-title">Flight Plan</h2>
+        <div class="destination">
+          <div class="mb-3 labels">
+            <h4>PRIORITY</h4>
+            <h4>Prioritize </h4>
+            <h4>>> = FF -></h4>
+          </div>
+          <div class="mb-3 textarea">
+            <label for="exampleFormControlTextarea1" class="form-label" style="display: block;">ADDRESSES</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Destination(s)</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="mb-3 flying-type">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Filling time</label> -->
+          <div class="type-fields">
+            <div class="filling-time">
+              <label for="exampleFormControlInput1" class="form-label">Filling time</label>
+              <div class="inputs" style="display: flex;">
+                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder=" " style="width: 200px;" required>
+                <h4 style="width: 50px; text-align: center; justify-content: center;">-></h4>
+              </div>
+            </div>
+            <div class="originator" >
+              <label for="exampleFormControlInput1" class="form-label">Originator</label>
+              <div class="inputs2" style="display: flex;">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " style="width: 200px;" maxlength="4" required>
+                <h4 style="width: 50px; text-align: center; display: flex; margin-left: 5px;">&lt;&lt;
+                <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
+              </div>
+            </div>
+            </h4>
+          </div>
+          <p>SPECIFIC IDENTIFICATION OF ADDREE(S) AND/OR ORIGINATOR</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="section-two">
+          <div class="first-row">
+
+            <div class="first-row-part1">
+              <div class="meas-type">
+                <h6>3 MESSAGE TYPE </h6>
+                <h3><<= (FPL </h3>
+              </div>
+  
+              <div class="aircraft-id">
+                <label for="exampleFormControlInput1" class="form-label">7 AIRCRAFT IDENTIFICATION</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " style="width: 200px;" pattern="[A-Za-z]{3}[0-9]{3}">
+              </div>
+            </div>
+            
+            <div class="first-row-part2">
+              <div class="flight-rules">
+                <label style="display: block;" for="exampleFormControlInput1" class="form-label">8 FLIGHT RULES</label>
+                <div style="display: flex; justify-content: center;">
+                  <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                </div>
+                
+              </div>
+  
+              <div class="type-of-flight">
+                <label for="exampleFormControlInput1" class="form-label">TYPE OF FLIGHT</label>
+                <div style="display: flex; justify-content: center;">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <h4 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                    <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
+                   </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="second-row">
+            <div class="number">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlInput1" class="form-label">9 NUMBER</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder=" " maxlength="2">
+            </div>
+
+            <div class="type-of-aircraft">
+              <label for="exampleFormControlInput1" class="form-label">TYPE OF AIRCRAFT</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " maxlength="4">
+            </div>
+
+            <div class="wake">
+              <label for="exampleFormControlInput1" class="form-label">WAKE TURBULENCE CAT.</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+
+            <div class="equipment">
+              <label for="exampleFormControlInput1" class="form-label">10 EQUIPMENT</label>
+              <div style="display: flex;">
+                <!-- <div class="long-line"></div> -->
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                  <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
+                 </h3>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="third-row">
+            <div class="departure-aero">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlInput1" class="form-label">13 DEPARTURE AERODROME</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+
+            <div class="time">
+              <label for="exampleFormControlInput1" class="form-label">TYPE OF AIRCRAFT</label>
+              <div style="display: flex;">
+                <!-- <div class="long-line"></div> -->
+                <input type="time" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                  <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
+                 </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="fourth-row">
+            <div class="cruising-speed">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlInput1" class="form-label">15 CRUISING SPEED</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+            <div class="level">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlInput1" class="form-label">LEVEL</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+            <div class="departure-aero">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlTextarea1" class="form-label">ROUTE</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 500px;"> </textarea>
+            </div>
+          </div>
+
+         
+          <div class="fifth-row">
+            <div class="number">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlInput1" class="form-label">DESTINATION AERODROME</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+
+            <div class="type-of-aircraft">
+              <label for="exampleFormControlInput1" class="form-label">total eet</label>
+              <input type="time" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+
+            <div class="wake">
+              <label for="exampleFormControlInput1" class="form-label">ALTN AERODROME</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+
+            <div class="equipment">
+              <label for="exampleFormControlInput1" class="form-label">2ND ALTN AERODROME</label>
+              <div style="display: flex;">
+                <!-- <div class="long-line"></div> -->
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                  <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
+                 </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">other information</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <p style="margin-top: 10px; text-align: center;">SUPPLEMENTARY INFORMATION (NOT TO BE TRANSMITTED IN FPL MESAGES)</p>
+
+
+          <div class="sixth-row">
+            <div class="group-one">
+              <div class="endurance">
+                <!-- <div class="long-line"></div> -->
+                <label for="exampleFormControlInput1" class="form-label">19 ENDURANCEE</label>
+                <div style="display: flex;">
+                  <h3 style="margin-right: 10px; width: 100px;"> - E / </h3>
+                  <input type="time" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                </div>
+              </div>
+  
+              <div class="person-on-boardt">
+                <label for="exampleFormControlInput1" class="form-label">PERSONS ON BOARD</label>
+
+                <div style="display: flex;">
+                  <h3 style="margin-right: 10px; width: 100px;"> -> p / </h3>
+                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                </div>
+                
+              </div>
+  
+            </div>
+           
+            <div class="emergency-radio">
+              <label for="exampleFormControlInput1" class="form-label">EMERGENCY RADIO</label>
+              <div style="display: flex;">
+                <h3 style="margin-right: 10px; width: 100px;"> -> r / </h3>
+                <div class="uhf">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">UHF</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="vhf">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label"> VHF</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="elt">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">ELT</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="seventh-row">
+            <div class="first-radio-grp">
+              <div class="first-radio-grp1">
+                <div class="survival">
+                  <label for="exampleFormControlInput1" class="form-label survival-label">survival equipment</label>
+                  <div style="display: flex; justify-content: center;">
+                    <h3 style="margin-right: 5px;">-> </h3>
+                    <input class="form-check-input survival-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="polar">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label"> POLAR</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="desert">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">DESERT</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="maritime">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">MARITIME</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="jungle">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">JUNGLE</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="first-radio-grp-2">
+              <div class="first-radio-grp1">
+               
+                <div class="jacket">
+                  <label style="display: block; margin-left: 30px;" for="exampleFormControlInput1" class="form-label">JACKETs</label>
+                  <div style="display: flex; justify-content: center;">
+                    <h3>-></h3>
+                    <input style="margin-left: 20px;" class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="polar">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label"> POLAR</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="desert">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">DESERT</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="maritime">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">MARITIME</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+                <div class="jungle">
+                  <label style="display: block;" for="exampleFormControlInput1" class="form-label">JUNGLE</label>
+                  <div style="display: flex; justify-content: center;">
+                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eight-row">
+            <div class="dinges">
+              <label style="display: block;" for="exampleFormControlInput1" class="form-label">DINGES</label>
+              <div style="display: flex; justify-content: center;">
+                <h3 style="margin-right: 10px;">-> </h3>
+                <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              </div>  
+            </div>
+            <!-- <h3 style="display: flex; align-items: center;" >/</h3> -->
+            <div class="number">
+              <!-- <div class="long-line"></div> -->
+              <label for="exampleFormControlInput1" class="form-label">NUMBER</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+            </div>
+
+            <div class="capacity">
+              <!-- <div class="long-line"></div> -->
+              <label style="margin-left: 40px;" for="exampleFormControlInput1" class="form-label">CAPACITY</label>
+              <div style="display: flex; justify-content: center;">
+                <h3 style="margin-right: 10px;">-> </h3>
+                <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              </div>
+            </div>
+
+            <div class="cover">
+              <!-- <div class="long-line"></div> -->
+              <label style="margin-left: 40px;" for="exampleFormControlInput1" class="form-label">COVER</label>
+              <div style="display: flex; justify-content: center;">
+                <h3 style="margin-right: 10px;">-> </h3>
+                <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              </div>
+            </div>
+
+            <div class="color">
+              <!-- <div class="long-line"></div> -->
+              <label style="margin-left: 40px;" for="exampleFormControlInput1" class="form-label">COLOR</label>
+
+              <div class="color-field">
+                <h3 style="margin-right: 10px; width: 50px;">-> </h3>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <h2 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                  <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
+                 </h2>
+              </div>
+            
+            </div>            
+          </div>
+
+
+          <div class="nineth-row">
+            <div class="acm">
+              <!-- <div class="long-line"></div> -->
+              <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">AIRCRAFT COLOUR AND MARKINGS</label>
+             <div style="display: flex;">
+              <h2 style="width: 50px; margin-right: 5px;">a /</h2>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+             </div>
+              
+            </div>
+
+            <div class="remarks">
+              <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">REMARKS</label>
+              <div style="display: flex;">
+                <!-- <div class="long-line"></div> -->
+                <h2 style="width: 50px; margin-right: 5px;">n /</h2>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                  <span style="display: flex; align-self: center; font-size: 15px;">&equiv;</span> 
+                 </h3>
+              </div>
+            </div>
+
+            <div class="pilot-in-command">
+              <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">PILOT-IN-COMMAND</label>
+              <div style="display: flex;">
+                <!-- <div class="long-line"></div> -->
+                <h2 style="width: 50px; margin-right: 5px;">c /</h2>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
+                  <span style="display: flex; align-self: center; font-size: 15px;">&equiv;</span> 
+                 </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="tenth-row">
+           <div class="empty-box"></div>
+           <div class="extra-info">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">SPACED RESERVED FOR ADDITIONAL REQUIREMENTS</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-btn">
+        <button class="submit" type="submit">verify</button>
+      </div>
+    </form>
+
+  
+   
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    <title>Flight Plan</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.form-container')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+</body>
+</html>
