@@ -90,6 +90,20 @@ body{
     /* border-bottom: solid 1px #FFFFFF; */
 }
 
+.originator-arrows{
+    width: 50px; 
+    text-align: center; 
+    display: flex; 
+    margin-left: 5px;
+}
+
+.originator-equal{
+    display: flex; 
+    align-self: center;
+    font-size: 15px; 
+    padding-top: 5px;
+}
+
 .labels{
 
     width: 15%;
@@ -216,17 +230,18 @@ body{
     display: flex;
 }
 .survival{
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .survival-label{
     display: block; 
-    width: 180px; 
+    width: 175px; 
     margin-left: 30px;
 }
 
 .survival-input{
     margin-right: 20px;
+    width: 5px;
 }
 .polar{
     margin-right: 30px;
@@ -244,6 +259,14 @@ body{
     margin-right: 30px;
 }
 
+.jacket div {
+    display: flex;
+    justify-content: center;
+}
+.jacket-label{
+    display: block; 
+    margin-left: 30px;
+}
 .eight-row{
     display: flex;
     /* justify-content: space-between; */
@@ -327,16 +350,23 @@ body{
 
 @media screen and (max-width: 600px) {
     body{
-        padding: 30px 50px;
+        padding: 30px 20px;
         overflow-x: hidden;
     }
 
+    .second-container-border{
+        padding: 10px 20px;
+    }
+
+    .destination{
+        display: block;
+    }
     .labels{
-        width: 35%;
+        width: 100vw;
     }
 
     .textarea{
-        width: 60%;
+        width: 100vw;
     }
 
     .first-row{
@@ -386,8 +416,12 @@ body{
 
     .sixth-row .group-one{
         display: block;
+        width: 100vw;
     }
 
+    .sixth-row .group-one .input{
+        width: 150px;
+    }
     .seventh-row{
         display: block;
     }
@@ -400,6 +434,9 @@ body{
         display: block;
     }
 
+    .survival{
+        margin-right: 0;
+    }
     .survival-label{
         display: block; 
         width: 180px; 
@@ -410,8 +447,34 @@ body{
         margin-left: 0;
     }
 
+    .jacket div{
+        display: flex;
+        justify-content: start;
+    }
+
+    .jacket div h3{
+      margin-right: 20px;
+    }
+    .jacket-label{
+        margin-left: 0;
+    }
+
+    .polar{
+        display: flex;
+    }
     .eight-row{
         display: block;
     }
 
+    .eight-row .number {
+        margin-bottom: 10px;
+    }
+
+    .originator-equal{
+        display: block;
+    }
+    .capacity .cover .cover label{
+       margin-left: 0;
+    }
 }
+
