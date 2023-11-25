@@ -9,16 +9,16 @@ text-shadow: #746EA2
 
 @font-face {
     font-family: telegraf-bold;
-    src: url('/assets/fonts/PPTelegraf-UltraBold.otf');
+    src: url('../assets/fonts/PPTelegraf-UltraBold.otf');
 }
 
 @font-face {
     font-family: telegraf-regular;
-    src: url('/assets/fonts/PPTelegraf-Regular.otf');
+    src: url('../assets/fonts/PPTelegraf-Regular.otf');
 }
 @font-face {
     font-family: telegraf-light;
-    src: url('/assets/fonts/PPTelegraf-UltraLight.otf');
+    src: url('../assets/fonts/PPTelegraf-UltraLight.otf');
 }
 
 *{
@@ -32,7 +32,7 @@ text-shadow: #746EA2
 .hero {
     height: 100vh;
     max-width: 100vw;
-    background-image: url('/assets/img/blueBG.png');
+    background-image: url('../assets/img/blueBG.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -171,7 +171,7 @@ text-shadow: #746EA2
 .tool-and-tips{
     height: 100vh;
     max-width: 100vw;
-    background-image: url('/assets/img/mapBGtab.png');
+    background-image: url('../assets/img/mapBGtab.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -208,7 +208,7 @@ text-shadow: #746EA2
     line-height: 30px;
 }
 .about{
-    background-image: url('/assets/img/mapBGtab.png');
+    background-image: url('../assets/img/mapBGtab.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -317,7 +317,7 @@ text-shadow: #746EA2
     margin: 0 10px;
 }
 .contacts{
-    background-image: url('/assets/img/mapBGtab.png');
+    background-image: url('../assets/img/mapBGtab.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
