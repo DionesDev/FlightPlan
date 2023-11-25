@@ -37,17 +37,6 @@ text-shadow: #746EA2
     background-repeat: no-repeat;
 }
 
-/* .hero .navbar {
-    position: fixed;
-    height: 9%;
-    width: 100vw;
-    background-color: #150052;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-} */
-
-
 #burger-menu {
     display: none;
     font-size: 26px;
@@ -56,13 +45,15 @@ text-shadow: #746EA2
     margin-right: 10px;
 }
 
-.container {
-    max-width: 1200px;
+.navbar .container {
+    min-width: 100vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #150052;
+    position: fixed;
+    z-index: 1;
 }
 
 nav ul {
@@ -77,11 +68,22 @@ nav ul li {
 }
 
 nav ul li a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px 16px;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'telegraf-regular', sans-serif;
 }
+
+nav ul li a:hover{
+    background-color: #FFFFFF;
+    color: #150052;
+    border-radius: 50px;
+    transition: .4s ease;
+} 
 
 .logo{
     margin-left: 10px;
@@ -646,6 +648,10 @@ textarea{
 }
 @media screen  and (max-width: 600px){
 
+    .navbar .container{
+        position: static;
+    }
+    
     nav ul {
         display: none;
         flex-direction: column;
