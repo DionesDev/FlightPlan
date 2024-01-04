@@ -1,17 +1,6 @@
-// function myFunction() {
-//     var x = document.getElementById("nav-list");
-//     var y = document.getElementById("navbar");
+/// LIST FOR CHECKING FORM CORRECT INPUTS.
+// const checkListItemOne = [];
 
-//     if (x.className === "nav-list" ) {
-//       x.className += " responsive";
-//     } 
-//     else if( y.className === "navbar"){
-//         y.className += " responsive";
-//     }else {
-//       x.className = "nav-list";
-//       y.className = "navbar";
-//     }
-//   }
 
 document.addEventListener('DOMContentLoaded', function () {
   const burgerMenu = document.getElementById('burger-menu');
@@ -21,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
       navList.classList.toggle('show');
   });
 
+  document.getElementById('imageLink').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.open(this.href, '_blank');
+  });
     // Add event listeners to each navigation item
     const navItems = document.querySelectorAll('nav ul li a');
     navItems.forEach(function (item) {

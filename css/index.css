@@ -8,17 +8,17 @@ text-shadow: #746EA2
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 @font-face {
-    font-family: telegraf-bold;
-    src: url('../assets/fonts/PPTelegraf-UltraBold.otf');
+    font-family: Rajdhani-Bold;
+    src: url('../assets/fonts/Rajdhani-Bold.ttf');
 }
 
 @font-face {
-    font-family: telegraf-regular;
-    src: url('../assets/fonts/PPTelegraf-Regular.otf');
+    font-family: Rajdhani-Regular;
+    src: url('../assets/fonts/Rajdhani-Regular.ttf');
 }
 @font-face {
-    font-family: telegraf-light;
-    src: url('../assets/fonts/PPTelegraf-UltraLight.otf');
+    font-family: Rajdhani-Light;
+    src: url('../assets/fonts/Rajdhani-Light.ttf');
 }
 
 *{
@@ -29,13 +29,36 @@ text-shadow: #746EA2
  scroll-behavior: smooth;
 }
 
-.hero {
+/* .hero {
     height: 100vh;
     max-width: 100vw;
-    background-image: url('../assets/img/blueBG.png');
+    /* background-image: url('../assets/img/blueBG.png');
     background-size: cover;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat; 
+    background:  rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+} */
+
+.hero {
+    height: 100vh;
+    /* display: flex; */
+    color: #fff;
+    overflow: hidden;
+    background-color: rgba(8, 8, 8);
+  }
+
+  /* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit; /* Inherit the background color from the parent 
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background 
+    z-index: -1;
+  } */
 
 #burger-menu {
     display: none;
@@ -46,16 +69,30 @@ text-shadow: #746EA2
 }
 
 .navbar .container {
+    padding: 0 250px;
     min-width: 100vw;
+    height: 100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #150052;
+    background-color: rgba(8, 8, 8);
     position: fixed;
     z-index: 1;
 }
 
+.nav-icons{
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.nav-icons img{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    fill: #FFFFFF;
+}
 nav ul {
     list-style: none;
     margin: 0;
@@ -73,9 +110,9 @@ nav ul li a {
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
 }
 
 nav ul li a:hover{
@@ -89,55 +126,18 @@ nav ul li a:hover{
     margin-left: 10px;
     margin-bottom: 10px;
     padding: 0 10px;
+    font-size: 1.3rem;
+    font-weight:900;
     margin-top: 10px;
+    font-family: 'Rajdhani-Bold', sans-serif;
     overflow: hidden;
 }
 
-.logo img{
+/* .logo img{
     height: 50px;
     width: 50px;
-}
-/* 
-.hero .navbar .logo{
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 0 10px;
-    margin-top: 10px;
-    overflow: hidden;
-}
-
-.hero .navbar .logo img{
-    height: 50px;
-    width: 50px;
-}
-
-.hero .navbar .nav-list{
-    display: flex;
-    align-items: center;
-    padding-right: 50px;
-}
-
-
-.hero .navbar .nav-list .icon{
-    display: none;   
-}
-.hero .navbar .nav-list a{
-    float: left;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    text-transform: uppercase;
-    font-family: 'telegraf-regular', sans-serif;
-}
-
-.hero .navbar .nav-list a:hover{
-    background-color: #FFFFFF;
-    color: #150052;
-    border-radius: 50px;
-    transition: .4s ease;
 } */
+
 .main-bg{
     width: 100vw;
     display: flex;
@@ -149,8 +149,8 @@ nav ul li a:hover{
     overflow: hidden;
 }
 .hero-img{
-    width: 70%;
-    height: 100%;
+    width: 50vw;
+    height: 90vh;
     padding-top: 30px;
 
 }
@@ -161,22 +161,22 @@ nav ul li a:hover{
 }
 
 .first-text{
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     font-size: 60px;
     text-align: center;
     color: #FFFFFF;
     font-weight: 900;
-    text-shadow: #746EA2 2px 5px;
+    /* text-shadow: #746EA2 2px 5px; */
 
 }
 
 .second-text{
     font-size: 60px;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     color: #FFFFFF;
     text-align: center;
     font-weight: 600;
-    text-shadow: #746EA2 4px 4px;
+    /* text-shadow: #746EA2 4px 4px; */
 }
 
 .btn-container{
@@ -185,14 +185,14 @@ nav ul li a:hover{
     align-items: center;
 }
 .hero-btn{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     height: 80px;
     width: 250px;
     font-size: 25px;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 50px;
@@ -201,15 +201,31 @@ nav ul li a:hover{
     background-color: #e1bf3e;
     color: #FFFFFF;
     box-shadow: inset 6px -6px 10px 0 #A16C15;
+    text-decoration: none; */
+    font-family: 'Rajdhani-Bold', sans-serif;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 60px;
+    width: 230px;
+    font-size: 20px;
     text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .hero-btn:hover{
-    margin-top: 10px;
+    /* margin-top: 10px;
     height: 80px;
     width: 250px;
     font-size: 25px;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 50px;
@@ -217,7 +233,17 @@ nav ul li a:hover{
     border: none;
     background-color: #FFFFFF;
     color: #e1bf3e;
-    box-shadow: inset 6px -6px 10px 0 #cec9c0;
+    box-shadow: inset 6px -6px 10px 0 #cec9c0; */
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #161616;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    /* margin: 10px; */
+    cursor: pointer;
 }
 .tool-and-tips{
     height: 100vh;
@@ -231,24 +257,34 @@ nav ul li a:hover{
     
 }
 
+.image-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
+  }
 
 .section-one-header{
     font-size: 30px;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .section-one-sub-header{
     font-size: 26px;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .section-one-main-text1{
     font-size: 25px;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -274,7 +310,7 @@ nav ul li a:hover{
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 500;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     text-align: center;
 }
 
@@ -283,7 +319,7 @@ nav ul li a:hover{
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 500;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -292,7 +328,7 @@ nav ul li a:hover{
     display: block;
     font-size: 25px;
     font-weight: 500;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     text-align: start;
     margin-bottom: 20px;
 }
@@ -300,47 +336,18 @@ nav ul li a:hover{
 
 .section-content{
     font-size: 20px;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     text-align: center;
     line-height: 30px;
    
 }
-/* .about-second-page{
-    background-image: url('/assets/img/mapBGtab.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    max-width: 100vw;
-    color: #FFFFFF;
-    padding: 100px 300px;
-} */
 
-/* .about-second-page .section-two-header{
-    display: block;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'telegraf-bold', sans-serif;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.about-second-page .section-two-header2{
-    display: block;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'telegraf-regular', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-} */
  .section-two-header4{
     display: block;
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 500;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 30px;
@@ -348,7 +355,7 @@ nav ul li a:hover{
 
 .section-two-content{
     font-size: 20px;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     text-align: center;
     line-height: 30px;
 }
@@ -408,7 +415,7 @@ nav ul li a:hover{
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 500;
-    font-family: 'telegraf-bold', sans-serif;
+    font-family: 'Rajdhani-Bold', sans-serif;
     text-align: center;
     margin-bottom: 10px;
     text-shadow: #FFFFFF  1px 0 8px;
@@ -418,9 +425,10 @@ nav ul li a:hover{
 
 .contact-text .content{
     text-align: center;
+    height: 100px;
     line-height: 25px;
     margin-bottom: 10px;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     font-size: 23px;
 }
 
@@ -434,6 +442,7 @@ nav ul li a:hover{
     width: 50px;
     height: 50px;
     margin-left: 30px;
+    fill: #FFFFFF;
 }
 
 
@@ -450,7 +459,7 @@ nav ul li a:hover{
 .label{
     display: block;
     font-size: 20px;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -467,8 +476,8 @@ nav ul li a:hover{
     width: 350px;
     z-index: 1;
     position: absolute;
-    top: 400px;
-    left: 100px;
+    top: 650px;
+    left: 250px;
 }
 
 
@@ -484,22 +493,86 @@ textarea{
     height: 55px;
     width: 150px;
     font-size: 17px;
-    font-family: 'telegraf-regular', sans-serif;
+    font-family: 'Rajdhani-Regular', sans-serif;
     text-transform: uppercase;
-    border-radius: 10px;
-    color: #FFFFFF;
-    background-color: #A3A1BE;
+    /* border-radius: 10px; */
+    /* color: #FFFFFF; */
+    background: transparent;
     letter-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
 } 
 
+@media screen  and (min-width: 1700px){
+    .tool-and-tips{
+        max-height: 70vh;
+    }
+}
 @media screen  and (max-width: 1700px){
     .microphone{
         height: 300px;
         width: 300px;
         z-index: 1;
         position: absolute;
-        top: 450px;
+        top: 570px;
+        left: 150px;
+    }
+    .main-bg{
+        padding-top: 70px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text{
+        width: 100vw;
+    }
+
+    .hero-img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .hero-img-container{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+    .tool-and-tips{
+        max-height: 65vh;
+    }
+
+    .tool-and-tips, .about{
+        padding: 150px 150px 0 150px;
+    }
+
+    .contact-text .content{
+        font-size: 15px;
+    }
+}
+
+@media screen  and (max-width: 1600px){
+    .microphone{
+        height: 300px;
+        width: 300px;
+        z-index: 1;
+        position: absolute;
+        top: 600px;
         left: 100px;
+    }
+
+    .nav-icons{
+        display: none;
+    }
+
+    .navbar .container{
+        padding: 0;
     }
 }
 
@@ -509,11 +582,18 @@ textarea{
         width: 300px;
         z-index: 1;
         position: absolute;
-        top: 500px;
+        top: 600px;
         left: 100px;
     }
-}
 
+    .nav-icons{
+        display: none;
+    }
+
+    .navbar .container{
+        padding: 0;
+    }
+}
 
 @media screen  and (max-width: 1300px){
     .microphone{
@@ -521,35 +601,17 @@ textarea{
         width: 300px;
         z-index: 1;
         position: absolute;
-        top: 550px;
-        left: 100px;
-    }
-}
-
-@media screen  and (max-width: 1200px){
-    .microphone{
-        height: 250px;
-        width: 250px;
-        z-index: 1;
-        position: absolute;
-        top: 580px;
-        left: 100px;
-    }
-}
-
-@media screen  and (max-width: 1179px){
-    .microphone{
-        height: 250px;
-        width: 250px;
-        z-index: 1;
-        position: absolute;
         top: 600px;
         left: 100px;
     }
-}
 
+    .tool-and-tips{
+        max-height: 75vh;
+    }
 
-@media only screen and (max-width:900px) {
+    .tool-and-tips, .about{
+        padding: 150px 150px 0 150px;
+    }
     .main-bg{
         padding-top: 70px;
         display: block;
@@ -572,12 +634,110 @@ textarea{
         align-items: center;
         justify-content: center;
     }
+
+}
+
+@media screen  and (max-width: 1200px){
+    .microphone{
+        height: 270px;
+        width: 270px;
+        z-index: 1;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+    }
+}
+
+@media screen  and (max-width: 1179px){
+    .microphone{
+        height: 270px;
+        width: 270px;
+        z-index: 1;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+    }
+
+    .contact-text .content{
+        font-size: 25px;
+    }
+    .tool-and-tips{
+        max-height: 70vh;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    .main-bg{
+        padding-top: 70px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .container{
+        position: static;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        /* background-color: #FFFFFF; */
+
+        background:  rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 2px;
+        border:1px solid rgba(46, 45, 45, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #150052;
+        
+    }
+
+    nav ul li a{
+        color: #FFFFFF;
+        font-family: 'Rajdhani-Bold', sans-serif;
+    }
+
+    #burger-menu {
+        display: block;
+        margin-top: -10px;
+    }
+    .hero-text{
+        width: 100vw;
+    }
+
+    .hero-img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .hero-img-container{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .tool-and-tips, .about{
         padding: 50px 50px 0 50px;
     }
 
     .tool-and-tips{
-        min-height: 130vh;
+        min-height: 70vh;
     }
 
     .contacts{
@@ -683,7 +843,7 @@ textarea{
 
     nav ul li a{
         color: #FFFFFF;
-        font-family: 'telegraf-bold', sans-serif;
+        font-family: 'Rajdhani-Bold', sans-serif;
     }
 
     #burger-menu {
@@ -695,40 +855,10 @@ textarea{
         height: 40px;
         width: 40px;
     }
-    /* .hero .navbar .logo img{
-        height: 40px;
-        width: 40px;
-    }
-    .hero .navbar .nav-list{
-        padding-right: 10px;
-    }
-    .hero .navbar .nav-list a {display: none;}
-    .hero .navbar .nav-list .icon{
-      float: right;
-      display: block;
-    }
 
-    .hero .navbar .nav-list .icon:hover{
-        border: none;
-      }
-
-    .hero .navbar .responsive {
-        position: relative;
-    }
-    .hero .navbar .nav-list .responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .hero .navbar .responsive a {
-        float: none;
-        display: block;
-        /* text-align: left; 
-        background-color: #150052;
-    } */
 
     .first-text{
-        font-family: 'telegraf-bold', sans-serif;
+        font-family: 'Rajdhani-Bold', sans-serif;
         font-size: 45px;
         text-align: center;
         color: #FFFFFF;
@@ -737,7 +867,7 @@ textarea{
     }
 
     .second-text{
-        font-family: 'telegraf-bold', sans-serif;
+        font-family: 'Rajdhani-Bold', sans-serif;
         font-size: 45px;
         text-align: center;
         color: #FFFFFF;
@@ -898,7 +1028,7 @@ textarea{
 
 
     .first-text{
-        font-family: 'telegraf-bold', sans-serif;
+        font-family: 'Rajdhani-Bold', sans-serif;
         font-size: 45px;
         text-align: center;
         color: #FFFFFF;
@@ -907,7 +1037,7 @@ textarea{
     }
 
     .second-text{
-        font-family: 'telegraf-bold', sans-serif;
+        font-family: 'Rajdhani-Bold', sans-serif;
         font-size: 45px;
         text-align: center;
         color: #FFFFFF;
@@ -927,7 +1057,7 @@ textarea{
     }
 
     .tool-and-tips{
-        min-height: 160vh;
+        min-height: 175vh;
     }
     .section-one-header{
         font-size: 30px;
@@ -1031,10 +1161,3 @@ textarea{
         width: 100%;
     }
 }
-
-
-
-
-
-
-

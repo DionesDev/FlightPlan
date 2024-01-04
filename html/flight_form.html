@@ -36,14 +36,14 @@
             <div class="filling-time">
               <label for="exampleFormControlInput1" class="form-label">Filling time</label>
               <div class="inputs" style="display: flex;">
-                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder=" " style="width: 200px;" required>
+                <input type="date" class="form-control" id="filling-time" placeholder=" " style="width: 200px;" required>
                 <h4 style="width: 50px; text-align: center; justify-content: center;">-></h4>
               </div>
             </div>
             <div class="originator" >
               <label for="exampleFormControlInput1" class="form-label">Originator</label>
               <div class="inputs2" style="display: flex;">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" style="width: 200px;" maxlength="4" pattern="[A-Za-z]+" required>
+                <input type="text" class="form-control" id="originator" placeholder="" style="width: 200px;" maxlength="4" pattern="[A-Za-z]+" required>
                 <h4 class = "originator-arrows">&lt;&lt;
                 <span class = "originator-equal">&equiv;</span> 
               </div>
@@ -65,7 +65,7 @@
   
               <div class="aircraft-id">
                 <label for="exampleFormControlInput1" class="form-label">7 AIRCRAFT IDENTIFICATION</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " style="width: 200px;">
+                <input type="text" class="form-control" id="aircraft-id" placeholder=" " style="width: 200px;" required>
               </div>
             </div>
             
@@ -73,14 +73,14 @@
               <div class="flight-rules">
                 <label style="display: block;" for="exampleFormControlInput1" class="form-label">8 FLIGHT RULES</label>
                 <div style="display: flex; justify-content: center;">
-                  <input  class="form-control" type="text" value="" id="flexCheckChecked" pattern="[A-Za-z]{3}[0-9]{3}" required>
+                  <input  class="form-control" type="text" value="" id="flight-rules" pattern="[A-Za-z]{3}[0-9]{3}" required>
                 </div>
               </div>
   
               <div class="type-of-flight">
                 <label for="exampleFormControlInput1" class="form-label">TYPE OF FLIGHT</label>
                 <div style="display: flex; justify-content: center;">
-                  <input class="form-control" type="text" value="" id="flexCheckChecked" pattern="[IVYZivyz]+" required>
+                  <input class="form-control" type="text" value="" id="type-of-flight" pattern="[IVYZivyz]+" required>
                   <h4 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                     <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                    </h4>
@@ -93,24 +93,24 @@
             <div class="number">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlInput1" class="form-label">9 NUMBER</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[0-9]{1,2}" maxlength="2">
+              <input type="text" class="form-control" id="nine_number" placeholder=" " pattern="[0-9]{1,2}" maxlength="2">
             </div>
 
             <div class="type-of-aircraft">
               <label for="exampleFormControlInput1" class="form-label">TYPE OF AIRCRAFT</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " maxlength="4">
+              <input type="text" class="form-control" id="type-of-aircraft" placeholder=" " maxlength="4" required>
             </div>
 
             <div class="wake">
               <label for="exampleFormControlInput1" class="form-label">WAKE TURBULENCE CAT.</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[LMHlmh]" required>
+              <input type="text" class="form-control" id="wake" placeholder=" " pattern="[LMHlmh]" required>
             </div>
 
             <div class="equipment">
               <label for="exampleFormControlInput1" class="form-label">10 EQUIPMENT</label>
               <div style="display: flex;">
                 <!-- <div class="long-line"></div> -->
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <input type="text" class="form-control" id="equipment" placeholder=" " required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                  </h3>
@@ -123,14 +123,14 @@
             <div class="departure-aero">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlInput1" class="form-label">13 DEPARTURE AERODROME</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " maxlength="4" pattern="[A-Za-z]{4}">
+              <input type="text" class="form-control" id="departure-aero" placeholder=" " maxlength="4" pattern="[A-Za-z]{4}" required>
             </div>
 
             <div class="time">
-              <label for="exampleFormControlInput1" class="form-label">TYPE OF AIRCRAFT</label>
+              <label for="exampleFormControlInput1" class="form-label">TIME</label>
               <div style="display: flex;">
                 <!-- <div class="long-line"></div> -->
-                <input type="time" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <input type="time" class="form-control" id="time" placeholder=" " required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                  </h3>
@@ -142,42 +142,42 @@
             <div class="cruising-speed">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlInput1" class="form-label">15 CRUISING SPEED</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="N\d+" required>
+              <input type="text" class="form-control" id="cruising-speed" placeholder=" " pattern="N\d+" required>
             </div>
             <div class="level">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlInput1" class="form-label">LEVEL</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " required>
+              <input type="text" class="form-control" id="level" placeholder=" " required>
             </div>
             <div class="departure-aero">
               <!-- <div class="long-line"></div> -->
-              <label for="exampleFormControlTextarea1" class="form-label">ROUTE</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[A-Za-z]{4}" required>
+              <label for="exampleFormControlTextarea1" class="form-label">EOBT</label>
+              <input type="text" class="form-control" id="eobt" placeholder=" " pattern="[A-Za-z]{4}" required>
             </div>
           </div>
 
           <div class="fifth-row">
             <div class="number">
               <!-- <div class="long-line"></div> -->
-              <label for="exampleFormControlInput1" class="form-label">DESTINATION AERODROME</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder=" " required pattern="[A-Za-z]{4}">
+              <label for="exampleFormControlInput1" class="form-label">16 DESTINATION AERODROME</label>
+              <input type="number" class="form-control" id="destination" placeholder=" " required pattern="[A-Za-z]{4}">
             </div>
 
             <div class="type-of-aircraft">
               <label for="exampleFormControlInput1" class="form-label">total eet</label>
-              <input type="time" class="form-control" id="exampleFormControlInput1" placeholder=" " required>
+              <input type="time" class="form-control" id="total_eet" placeholder=" " required>
             </div>
 
             <div class="wake">
               <label for="exampleFormControlInput1" class="form-label">ALTN AERODROME</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[A-Za-z]{4}">
+              <input type="text" class="form-control" id="alt_aerodome" placeholder=" " pattern="[A-Za-z]{4}" required>
             </div>
 
             <div class="equipment">
               <label for="exampleFormControlInput1" class="form-label">2ND ALTN AERODROME</label>
               <div style="display: flex;">
                 <!-- <div class="long-line"></div> -->
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <input type="text" class="form-control" id="equipment" placeholder=" " required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                  </h3>
@@ -186,7 +186,7 @@
           </div>
 
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">other information</label>
+            <label for="exampleFormControlTextarea1" class="form-label">18 other information</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <p style="margin-top: 10px; text-align: center;">SUPPLEMENTARY INFORMATION (NOT TO BE TRANSMITTED IN FPL MESAGES)</p>
@@ -199,20 +199,17 @@
                 <label for="exampleFormControlInput1" class="form-label">19 ENDURANCE</label>
                 <div style="display: flex;">
                   <h3 style="margin-right: 10px; width: 100px;"> - E / </h3>
-                  <input type="time" class="form-control input" id="exampleFormControlInput1" placeholder=" " required>
+                  <input type="time" class="form-control input" id="endurance" placeholder=" " required>
                 </div>
               </div>
   
               <div class="person-on-board">
                 <label for="exampleFormControlInput1" class="form-label">PERSONS ON BOARD</label>
-
                 <div style="display: flex;">
                   <h3 style="margin-right: 10px; width: 100px;"> -> p / </h3>
-                  <input type="text" class="form-control input" id="exampleFormControlInput1" placeholder=" " required pattern="[0-9]{4}" maxlength="4">
+                  <input type="text" class="form-control input" id="person-on-board" placeholder=" " required pattern="[0-9]{4}" maxlength="4">
                 </div>
-                
               </div>
-  
             </div>
            
             <div class="emergency-radio">
@@ -222,23 +219,21 @@
                 <div class="uhf">
                   <label style="display: block;" for="exampleFormControlInput1" class="form-label">UHF</label>
                   <div style="display: flex; justify-content: center;">
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="uhf" id="uhf">
                   </div>
-                  
                 </div>
                 <div class="vhf">
                   <label style="display: block;" for="exampleFormControlInput1" class="form-label"> VHF</label>
                   <div style="display: flex; justify-content: center;">
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="vhf" id="vhf">
                   </div>
                   
                 </div>
                 <div class="elt">
                   <label style="display: block;" for="exampleFormControlInput1" class="form-label">ELT</label>
                   <div style="display: flex; justify-content: center;">
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="elt" id="elt">
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -260,30 +255,29 @@
                 <div class="polar">
                   <label for="exampleFormControlInput1" class="form-label"> POLAR</label>
                   <div>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="polar" id="polar">
                   </div>
                   
                 </div>
                 <div class="desert">
                   <label  for="exampleFormControlInput1" class="form-label">DESERT</label>
                   <div>
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="desert" id="desert">
                   </div>
                   
                 </div>
                 <div class="maritime">
                   <label for="exampleFormControlInput1" class="form-label">MARITIME</label>
                   <div>
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="maritime" id="maritime">
                   </div>
                   
                 </div>
                 <div class="jungle">
                   <label for="exampleFormControlInput1" class="form-label">JUNGLE</label>
                   <div>
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="jungle" id="jungle">
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -301,30 +295,29 @@
                 <div class="light">
                   <label for="exampleFormControlInput1" class="form-label"> LIGHT</label>
                   <div>
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="light" id="light">
                   </div>
                   
                 </div>
                 <div class="floures">
                   <label for="exampleFormControlInput1" class="form-label">FLOURES</label>
                   <div>
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="floures" id="floures">
                   </div>
                   
                 </div>
-                <div class="floures2">
+                <div class="uhf">
                   <label for="exampleFormControlInput1" class="form-label">UHF</label>
                   <div>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input class="form-check-input" type="checkbox" value="uhf" id="uhf2">
                   </div>
                   
                 </div>
-                <div class="light2">
+                <div class="vhf">
                   <label for="exampleFormControlInput1" class="form-label">VHF</label>
                   <div>
-                    <input  class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <input  class="form-check-input" type="checkbox" value="vhf" id="vhf">
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -332,22 +325,22 @@
 
           <div class="eight-row">
             <div class="dinges">
-              <label style="display: block;" for="exampleFormControlInput1" class="form-label">DINGES</label>
+              <label style="display: block;" for="exampleFormControlInput1" class="form-label" >DINGES</label>
               <div style="display: flex; justify-content: center;">
                 <h3>-> </h3>
-                <input  class="form-control" type="text" value="" id="flexCheckChecked" pattern="[0-9]{2}" maxlength="2">
+                <input  class="form-control" type="text" id="dinges" pattern="[0-9]{2}" maxlength="2" required>
               </div>  
             </div>
             <div class="number">
               <label for="exampleFormControlInput1" class="form-label">NUMBER</label>
-              <input type="number" class="form-control input" id="exampleFormControlInput1" placeholder=" ">
+              <input type="number" class="form-control input" id="number" placeholder=" ">
             </div>
 
             <div class="capacity">
               <label  for="exampleFormControlInput1" class="form-label">CAPACITY</label>
               <div style="display: flex; justify-content: center;">
                 <h3 style="width: 50px;">-> </h3>
-                <input  class="form-control" type="text" value="" id="flexCheckChecked" maxlength="3" pattern="[0-9]{4}">
+                <input  class="form-control" type="text" id="capacity" maxlength="3" pattern="[0-9]{4}" required>
               </div>
             </div>
 
@@ -355,40 +348,37 @@
               <label for="exampleFormControlInput1" class="form-label">COVER</label>
               <div style="display: flex; justify-content: center;">
                 <h3 style="width: 50px;">-> </h3>
-                <input  class="form-control" type="text" value="" id="flexCheckChecked" pattern="[A-Za-z]">
+                <input  class="form-control" type="text" id="cover" pattern="[A-Za-z]">
               </div>
             </div>
 
             <div class="color">
               <label for="exampleFormControlInput1" class="form-label">COLOR</label>
-
               <div class="color-field">
                 <h3 style="margin-right: 10px; width: 50px;">-> </h3>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[A-Za-z]">
+                <input type="text" class="form-control" id="color" placeholder=" " pattern="[A-Za-z]" required>
                 <h2 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                  </h2>
-              </div>
-            
+              </div>       
             </div>            
           </div>
-
 
           <div class="nineth-row">
             <div class="acm">
               <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">AIRCRAFT COLOUR AND MARKINGS</label>
              <div style="display: flex;">
               <h2 style="width: 50px; margin-right: 5px;">a /</h2>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[A-Za-z]">
+              <input type="text" class="form-control" id="acm" placeholder=" " pattern="[A-Za-z]" required>
              </div>
               
             </div>
 
             <div class="remarks">
-              <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">REMARKS</label>
+              <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label" >REMARKS</label>
               <div style="display: flex;">
                 <h2 style="width: 50px; margin-right: 5px;">n /</h2>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" "pattern="[A-Za-z]">
+                <input type="text" class="form-control" id="remarks" placeholder=" "pattern="[A-Za-z]" required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px;">&equiv;</span> 
                  </h3>
@@ -399,7 +389,7 @@
               <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">PILOT-IN-COMMAND</label>
               <div style="display: flex;">
                 <h2 style="width: 50px; margin-right: 5px;">c /</h2>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <input type="text" class="form-control" id="pilot" placeholder=" " required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px;">&equiv;</span> 
                  </h3>
@@ -445,9 +435,184 @@
       }
 
       form.classList.add('was-validated')
+
+      checkValue();
     }, false)
   })
 })()
+
+const date_of_flight = ["022724", '093124', '011524' , '021424', '220214', '211225'];
+const aircraft_id = ['RPC1234', 'RPC8080', 'CEB214', 'PAL467', 'BIC801', 'APG777'];
+const flight_rules = ['IFR', 'I'];
+const type_of_flight = ['G', 'S', 'N'];
+const type_of_aircraft = ['300ER', 'AT72', 'A320', 'C25C', 'C68A'];
+const equipment = ['BDLOFGHRVWY', 'SD(E1E2E3)FGHI(J1J4)RWXYZ/LB1D1', 'SDFLOVZ / S'];
+const departure_aerodome = ['RPLL'];
+const time = [] ;
+const cruising_speed = ['N0950', 'N0250','N0430', 'N0450', 'N0420', 'N0400'];
+const flight_lvl = ['F390','F360', 'FL330', 'FL090', 'FL390'];
+const route = [' IPATA W25 BATA W8 DAO', 'VERDE A461 SAJ A461 TINDO', 'JOM A590 BUBDO Y83 MOE Y81 RUTAS', 'ALBAT VFR', 'M646 RADEG ALPAS ESCAN CHRIS KAPOH ABVAR POTIB' ];
+const destination = ['RPMD', 'RPMZ', 'RJAA', 'RCKW'];
+const alt_aerodome = ['RPMR', 'RPUK', 'RJTT', 'RPLC', 'RPLE', 'RPLI'];
+const time_enroute = ['0125', '0115', '0425', '0025', '0110'];
+const fuel_endurance = ['0600', '0230', '0539', '0330', '2200'];
+const persons_on_board= ['6', '5', '160', '174', '26', '312'];
+const emergency_radio = [];
+const survival_equip = [];
+const jackets = [];
+const dinges = ['01', '06', '08'];
+const capacity = ['12', '180', '300'];
+const aircraft_color = ['YELLOW', 'WHITE', 'Red '];
+const aircraft_color_and_markings = ['WHITE AND BLACK', 'RED AND WHITE', 'YELLOW BLUE AND GREEN', 'RED YELLOW AND BLUE', 'White with Green and Blue stripes', 'Red and White'];
+const pilot = ['CAPT. JI CHANG WOOK ATPL 101010', 'CAPT. LEE MIN HO / ATPL 123456', 'Capt. Alexa Dulcero 123456- ATPL', 'CAPT. DANIELLE SAJOR 234567- ATPL' , 'Capt. Ernest Jr. Delos Santos 456789- ATPL', 'Capt. Trixie Marasigan 123456 - ATP'];
+const remarks = ['PHILJETS AERO CHARTER CORPORATION / AOC NUMBER 123456', 'RMK/MEDEVAC', 'MEDEVAC', 'SCHEDULED AIR SERVICE', 'NON SCHEDULED AIR SERVICE'];
+
+
+const date_of_flight_field                = document.getElementById('filling-time').value;
+const aircraft_id_field                   = document.getElementById('aircraft-id').value;
+const flight_rules_field                  = document.getElementById('flight-rules').value;
+const type_of_flight_field                = document.getElementById('type-of-flight').value;
+const type_of_aircraft_field              = document.getElementById('type-of-aircraft').value;
+const equipment_field                     = document.getElementById('equipment').value;
+const departure_aerodome_field            = document.getElementById('departure-aero').value;
+const time_field                          = document.getElementById('time').value;
+const cruising_speed_field                = document.getElementById('cruising-speed').value;
+const flight_lvl_field                    = document.getElementById('level').value;
+const route_field                         = document.getElementById('eobt').value;
+const destination_field                   = document.getElementById('destination').value;
+const alt_aerodome_field                  = document.getElementById('alt_aerodome').value;
+const time_enroute_field                  = document.getElementById('total_eet').value;
+const fuel_endurance_field                = document.getElementById('endurance').value;
+const persons_on_board_field              = document.getElementById('person-on-board').value;
+// const emergency_radio_field               = document.getElementById('inputField').value;
+// const survival_equip_field                = document.getElementById('inputField').value;
+// const jackets_field                       = document.getElementById('inputField').value;
+const dinges_field                        = document.getElementById('dinges').value;
+const capacity_field                      = document.getElementById('capacity').value;
+const aircraft_color_field                = document.getElementById('color').value;
+const aircraft_color_and_markings_field   = document.getElementById('acm').value;
+const pilot_field                         = document.getElementById('pilot').value;
+const remarks_field                       = document.getElementById('remarks').value;
+
+
+
+// Function to check if a value exists in the list (case-sensitive or case-insensitive)
+function checkValue() {
+
+  // Collect non-matching values
+  const nonMatchingValues = [];
+  // Check if the input value is in the list (case-sensitive)
+  
+  if (!date_of_flight.includes(date_of_flight_field) && !date_of_flight.some(item => item.toLowerCase() === date_of_flight_field.toLowerCase())) {
+    nonMatchingValues.push(date_of_flight_field);
+  }
+
+  if (!aircraft_id.includes(aircraft_id_field) && !aircraft_id.some(item => item.toLowerCase() === aircraft_id_field.toLowerCase())) {
+    nonMatchingValues.push(aircraft_id_field);
+  }
+
+  if (!flight_rules.includes(flight_rules_field) && !flight_rules.some(item => item.toLowerCase() === flight_rules_field.toLowerCase())) {
+    nonMatchingValues.push(flight_rules_field);
+  }
+
+  if (!type_of_flight.includes(type_of_flight_field) && !type_of_flight.some(item => item.toLowerCase() === type_of_flight_field.toLowerCase())) {
+    nonMatchingValues.push(type_of_flight_field);
+  }
+
+  if (!type_of_aircraft.includes(type_of_aircraft_field) && !type_of_aircraft.some(item => item.toLowerCase() === type_of_aircraft_field.toLowerCase())) {
+    nonMatchingValues.push(type_of_aircraft_field);
+  }
+
+  if (!equipment.includes(equipment_field) && !equipment.some(item => item.toLowerCase() === equipment_field.toLowerCase())) {
+    nonMatchingValues.push(equipment_field);
+  }
+
+  if (!departure_aerodome.includes(departure_aerodome_field) && !departure_aerodome.some(item => item.toLowerCase() === departure_aerodome_field.toLowerCase())) {
+    nonMatchingValues.push(departure_aerodome_field);
+  }
+
+  if (!cruising_speed.includes(cruising_speed_field) && !cruising_speed.some(item => item.toLowerCase() === cruising_speed_field.toLowerCase())) {
+    nonMatchingValues.push(cruising_speed_field);
+  }
+
+  // if (!time.includes(time_field) && !time.some(item => item.toLowerCase() === time_field.toLowerCase())) {
+  //   nonMatchingValues.push(time_field);
+  // }
+
+  if (!flight_lvl.includes(flight_lvl_field) && !flight_lvl.some(item => item.toLowerCase() === flight_lvl_field.toLowerCase())) {
+    nonMatchingValues.push(flight_lvl_field);
+  }
+
+  if (!route.includes(route_field) && !route.some(item => item.toLowerCase() === route_field.toLowerCase())) {
+    nonMatchingValues.push(route_field);
+  }
+
+  if (!destination.includes(destination_field) && !destination.some(item => item.toLowerCase() === destination_field.toLowerCase())) {
+    nonMatchingValues.push(destination_field);
+  }
+
+  if (!alt_aerodome.includes(alt_aerodome_field) && !alt_aerodome.some(item => item.toLowerCase() === alt_aerodome_field.toLowerCase())) {
+    nonMatchingValues.push(alt_aerodome_field);
+  }
+
+  if (!time_enroute.includes(time_enroute_field) && !time_enroute.some(item => item.toLowerCase() === time_enroute_field.toLowerCase())) {
+    nonMatchingValues.push(time_enroute_field);
+  }
+
+  if (!fuel_endurance.includes(fuel_endurance_field) && !fuel_endurance.some(item => item.toLowerCase() === fuel_endurance_field.toLowerCase())) {
+    nonMatchingValues.push(fuel_endurance_field);
+  }
+
+  if (!persons_on_board.includes(persons_on_board_field) && !persons_on_board.some(item => item.toLowerCase() === persons_on_board_field.toLowerCase())) {
+    nonMatchingValues.push(persons_on_board_field);
+  }
+
+  // if (!emergency_radio.includes(emergency_radio_field) && !emergency_radio.some(item => item.toLowerCase() === emergency_radio_field.toLowerCase())) {
+  //   nonMatchingValues.push(emergency_radio_field);
+  // }
+
+  // if (!survival_equip.includes(survival_equip_field) && !survival_equip.some(item => item.toLowerCase() === survival_equip_field.toLowerCase())) {
+  //   nonMatchingValues.push(survival_equip_field);
+  // }
+
+  // if (!jackets.includes(jackets_field) && !jackets.some(item => item.toLowerCase() === jackets_field.toLowerCase())) {
+  //   nonMatchingValues.push(jackets_field);
+  // }
+
+  if (!dinges.includes(dinges_field) && !dinges.some(item => item.toLowerCase() === dinges_field.toLowerCase())) {
+    nonMatchingValues.push(dinges_field);
+  }
+
+  if (!capacity.includes(capacity_field) && !capacity.some(item => item.toLowerCase() === capacity_field.toLowerCase())) {
+    nonMatchingValues.push(capacity_field);
+  }
+
+  if (!aircraft_color.includes(aircraft_color_field) && !aircraft_color.some(item => item.toLowerCase() === aircraft_color_field.toLowerCase())) {
+    nonMatchingValues.push(aircraft_color_field);
+  }
+
+  if (!aircraft_color_and_markings.includes(aircraft_color_and_markings_field) && !aircraft_color_and_markings.some(item => item.toLowerCase() === aircraft_color_and_markings_field.toLowerCase())) {
+    nonMatchingValues.push(aircraft_color_and_markings_field);
+  }
+
+  if (!pilot.includes(pilot_field) && !pilot.some(item => item.toLowerCase() === pilot_field.toLowerCase())) {
+    nonMatchingValues.push(pilot_field);
+  }
+  if (!remarks.includes(remarks_field) && !remarks.some(item => item.toLowerCase() === remarks_field.toLowerCase())) {
+    nonMatchingValues.push(remarks_field);
+  }
+  
+
+  // Display non-matching values in an alert
+  if (nonMatchingValues.length > 0) {
+    const alertMessage = `Wrong inputs on these items:\n${nonMatchingValues.join('\n')}`;
+    alert(alertMessage);
+  } else {
+    alert('All items are correct!');
+  }
+}
+
+
 </script>
 </body>
 </html>
