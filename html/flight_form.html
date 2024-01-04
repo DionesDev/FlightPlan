@@ -504,35 +504,35 @@ function checkValue() {
   // Check if the input value is in the list (case-sensitive)
   
   if (!date_of_flight.includes(date_of_flight_field) && !date_of_flight.some(item => item.toLowerCase() === date_of_flight_field.toLowerCase())) {
-    nonMatchingValues.push(date_of_flight_field);
+    nonMatchingValues.push('FILLING TIME');
   }
 
   if (!aircraft_id.includes(aircraft_id_field) && !aircraft_id.some(item => item.toLowerCase() === aircraft_id_field.toLowerCase())) {
-    nonMatchingValues.push(aircraft_id_field);
+    nonMatchingValues.push('AIRCRAFT IDENTIFICATION');
   }
 
   if (!flight_rules.includes(flight_rules_field) && !flight_rules.some(item => item.toLowerCase() === flight_rules_field.toLowerCase())) {
-    nonMatchingValues.push(flight_rules_field);
+    nonMatchingValues.push('FLIGHT RULES');
   }
 
   if (!type_of_flight.includes(type_of_flight_field) && !type_of_flight.some(item => item.toLowerCase() === type_of_flight_field.toLowerCase())) {
-    nonMatchingValues.push(type_of_flight_field);
+    nonMatchingValues.push('TYPE OF FLIGHT');
   }
 
   if (!type_of_aircraft.includes(type_of_aircraft_field) && !type_of_aircraft.some(item => item.toLowerCase() === type_of_aircraft_field.toLowerCase())) {
-    nonMatchingValues.push(type_of_aircraft_field);
+    nonMatchingValues.push('TYPE OF AIRCRAFT');
   }
 
   if (!equipment.includes(equipment_field) && !equipment.some(item => item.toLowerCase() === equipment_field.toLowerCase())) {
-    nonMatchingValues.push(equipment_field);
+    nonMatchingValues.push('EQUIPMENT');
   }
 
   if (!departure_aerodome.includes(departure_aerodome_field) && !departure_aerodome.some(item => item.toLowerCase() === departure_aerodome_field.toLowerCase())) {
-    nonMatchingValues.push(departure_aerodome_field);
+    nonMatchingValues.push('DEPARTURE AERODOME');
   }
 
   if (!cruising_speed.includes(cruising_speed_field) && !cruising_speed.some(item => item.toLowerCase() === cruising_speed_field.toLowerCase())) {
-    nonMatchingValues.push(cruising_speed_field);
+    nonMatchingValues.push('CRUISING SPEED');
   }
 
   // if (!time.includes(time_field) && !time.some(item => item.toLowerCase() === time_field.toLowerCase())) {
@@ -540,31 +540,31 @@ function checkValue() {
   // }
 
   if (!flight_lvl.includes(flight_lvl_field) && !flight_lvl.some(item => item.toLowerCase() === flight_lvl_field.toLowerCase())) {
-    nonMatchingValues.push(flight_lvl_field);
+    nonMatchingValues.push('FLIGHT LEVEL');
   }
 
   if (!route.includes(route_field) && !route.some(item => item.toLowerCase() === route_field.toLowerCase())) {
-    nonMatchingValues.push(route_field);
+    nonMatchingValues.push('EOBT');
   }
 
   if (!destination.includes(destination_field) && !destination.some(item => item.toLowerCase() === destination_field.toLowerCase())) {
-    nonMatchingValues.push(destination_field);
+    nonMatchingValues.push('DESTINATION');
   }
 
   if (!alt_aerodome.includes(alt_aerodome_field) && !alt_aerodome.some(item => item.toLowerCase() === alt_aerodome_field.toLowerCase())) {
-    nonMatchingValues.push(alt_aerodome_field);
+    nonMatchingValues.push('ALT AERODOME');
   }
 
   if (!time_enroute.includes(time_enroute_field) && !time_enroute.some(item => item.toLowerCase() === time_enroute_field.toLowerCase())) {
-    nonMatchingValues.push(time_enroute_field);
+    nonMatchingValues.push('TIME ENROUTE');
   }
 
   if (!fuel_endurance.includes(fuel_endurance_field) && !fuel_endurance.some(item => item.toLowerCase() === fuel_endurance_field.toLowerCase())) {
-    nonMatchingValues.push(fuel_endurance_field);
+    nonMatchingValues.push('FUEL ENDURANCE');
   }
 
   if (!persons_on_board.includes(persons_on_board_field) && !persons_on_board.some(item => item.toLowerCase() === persons_on_board_field.toLowerCase())) {
-    nonMatchingValues.push(persons_on_board_field);
+    nonMatchingValues.push('PERSONS ON BOARD');
   }
 
   // if (!emergency_radio.includes(emergency_radio_field) && !emergency_radio.some(item => item.toLowerCase() === emergency_radio_field.toLowerCase())) {
@@ -580,26 +580,26 @@ function checkValue() {
   // }
 
   if (!dinges.includes(dinges_field) && !dinges.some(item => item.toLowerCase() === dinges_field.toLowerCase())) {
-    nonMatchingValues.push(dinges_field);
+    nonMatchingValues.push('DINGES');
   }
 
   if (!capacity.includes(capacity_field) && !capacity.some(item => item.toLowerCase() === capacity_field.toLowerCase())) {
-    nonMatchingValues.push(capacity_field);
+    nonMatchingValues.push('CAPACITY');
   }
 
   if (!aircraft_color.includes(aircraft_color_field) && !aircraft_color.some(item => item.toLowerCase() === aircraft_color_field.toLowerCase())) {
-    nonMatchingValues.push(aircraft_color_field);
+    nonMatchingValues.push('AIRCRAFT COLOR');
   }
 
   if (!aircraft_color_and_markings.includes(aircraft_color_and_markings_field) && !aircraft_color_and_markings.some(item => item.toLowerCase() === aircraft_color_and_markings_field.toLowerCase())) {
-    nonMatchingValues.push(aircraft_color_and_markings_field);
+    nonMatchingValues.push('AIRCRAFT COLOR AND MARKINGS');
   }
 
   if (!pilot.includes(pilot_field) && !pilot.some(item => item.toLowerCase() === pilot_field.toLowerCase())) {
-    nonMatchingValues.push(pilot_field);
+    nonMatchingValues.push('PILOT');
   }
   if (!remarks.includes(remarks_field) && !remarks.some(item => item.toLowerCase() === remarks_field.toLowerCase())) {
-    nonMatchingValues.push(remarks_field);
+    nonMatchingValues.push('REMARKS');
   }
   
 
