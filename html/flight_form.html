@@ -171,7 +171,7 @@
 
             <div class="type-of-aircraft">
               <label for="exampleFormControlInput1" class="form-label">total eet</label>
-              <input type="time" class="form-control" id="total_eet" placeholder=" " required>
+              <input type="text" class="form-control" id="total_eet" placeholder=" " required>
             </div>
 
             <div class="wake">
@@ -462,7 +462,7 @@ const type_of_flight = ['G', 'S', 'N'];
 const type_of_aircraft = ['300ER', 'AT72', 'A320', 'C25C', 'C68A'];
 const equipment = ['BDLOFGHRVWY', 'SD(E1E2E3)FGHI(J1J4)RWXYZ/LB1D1', 'SDFLOVZ / S'];
 const departure_aerodome = ['RPLL'];
-const time = [] ;
+const time = ['0100Z', '2330Z', '1300Z', '0000Z', '0200Z', '0100Z'] ;
 const cruising_speed = ['N0950', 'N0250','N0430', 'N0450', 'N0420', 'N0400'];
 const flight_lvl = ['F390','F360', 'FL330', 'FL090', 'FL390'];
 const route = [' IPATA W25 BATA W8 DAO', 'VERDE A461 SAJ A461 TINDO', 'JOM A590 BUBDO Y83 MOE Y81 RUTAS', 'ALBAT VFR', 'M646 RADEG ALPAS ESCAN CHRIS KAPOH ABVAR POTIB' ];
@@ -538,7 +538,7 @@ function checkValue() {
   var date_of_flight_formatted = convertDateFormat(date_of_flight_field);
   // var time_formatted = convertTimeFormat(time_field);
   // var time_enroute_formatted = convertTimeFormat(time_enroute_field);
-  console.log(time_enroute_formatted);
+  // console.log(time_enroute_formatted);
   if (!date_of_flight.includes(date_of_flight_formatted.trim()) && !date_of_flight.some(item => item.toLowerCase() === date_of_flight_formatted.toLowerCase())) {
     nonMatchingValues.push('FILLING TIME');
   }
@@ -571,9 +571,9 @@ function checkValue() {
     nonMatchingValues.push('CRUISING SPEED');
   }
 
-  // if (!time.includes(time_field) && !time.some(item => item.toLowerCase() === time_field.toLowerCase())) {
-  //   nonMatchingValues.push(time_field);
-  // }
+  if (!time.includes(time_field) && !time.some(item => item.toLowerCase() === time_field.toLowerCase().trim())) {
+    nonMatchingValues.push('TIME');
+  }
 
   if (!flight_lvl.includes(flight_lvl_field.trim()) && !flight_lvl.some(item => item.toLowerCase() === flight_lvl_field.toLowerCase().trim())) {
     nonMatchingValues.push('FLIGHT LEVEL');
