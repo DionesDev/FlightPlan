@@ -134,7 +134,7 @@
               <label for="exampleFormControlInput1" class="form-label">TIME</label>
               <div style="display: flex;">
                 <!-- <div class="long-line"></div> -->
-                <input type="time" class="form-control" id="time" placeholder=" " required>
+                <input type="text" class="form-control" id="time" placeholder=" " required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                  </h3>
@@ -536,8 +536,8 @@ function checkValue() {
   const nonMatchingValues = [];
   // Check if the input value is in the list (case-sensitive)
   var date_of_flight_formatted = convertDateFormat(date_of_flight_field);
-  var time_formatted = convertTimeFormat(time_field);
-  var time_enroute_formatted = convertTimeFormat(time_enroute_field);
+  // var time_formatted = convertTimeFormat(time_field);
+  // var time_enroute_formatted = convertTimeFormat(time_enroute_field);
   console.log(time_enroute_formatted);
   if (!date_of_flight.includes(date_of_flight_formatted.trim()) && !date_of_flight.some(item => item.toLowerCase() === date_of_flight_formatted.toLowerCase())) {
     nonMatchingValues.push('FILLING TIME');
@@ -591,7 +591,7 @@ function checkValue() {
     nonMatchingValues.push('ALT AERODOME');
   }
 
-  if (!time_enroute.includes(time_enroute_formatted.trim()) && !time_enroute.some(item => item.toLowerCase() === time_enroute_formatted.toLowerCase().trim())) {
+  if (!time_enroute.includes(time_enroute_field.trim()) && !time_enroute.some(item => item.toLowerCase() === time_enroute_field.toLowerCase().trim())) {
     nonMatchingValues.push('TIME ENROUTE');
   }
 
