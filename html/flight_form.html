@@ -60,6 +60,7 @@
             <div class="first-row-part1">
               <div class="meas-type">
                 <h6>3 MESSAGE TYPE </h6>
+                
                 <h3><<= (FPL </h3>
               </div>
   
@@ -73,14 +74,16 @@
               <div class="flight-rules">
                 <label style="display: block;" for="exampleFormControlInput1" class="form-label">8 FLIGHT RULES</label>
                 <div style="display: flex; justify-content: center;">
-                  <input  class="form-control" type="text" value="" id="flight-rules" pattern="[A-Za-z]{3}[0-9]{3}" required>
+                  <!-- <input  class="form-control" type="text" value="" id="flight-rules" pattern="[A-Za-z]{3}[0-9]{3}" required> -->
+                  <input  class="form-control" type="text" value="" id="flight-rules" required>
                 </div>
               </div>
   
               <div class="type-of-flight">
                 <label for="exampleFormControlInput1" class="form-label">TYPE OF FLIGHT</label>
                 <div style="display: flex; justify-content: center;">
-                  <input class="form-control" type="text" value="" id="type-of-flight" pattern="[IVYZivyz]+" required>
+                  <!-- <input class="form-control" type="text" value="" id="type-of-flight" pattern="[IVYZivyz]+" required> -->
+                  <input class="form-control" type="text" value="" id="type-of-flight" required>
                   <h4 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                     <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                    </h4>
@@ -98,7 +101,7 @@
 
             <div class="type-of-aircraft">
               <label for="exampleFormControlInput1" class="form-label">TYPE OF AIRCRAFT</label>
-              <input type="text" class="form-control" id="type-of-aircraft" placeholder=" " maxlength="4" required>
+              <input type="text" class="form-control" id="type-of-aircraft" placeholder=" "required>
             </div>
 
             <div class="wake">
@@ -123,7 +126,8 @@
             <div class="departure-aero">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlInput1" class="form-label">13 DEPARTURE AERODROME</label>
-              <input type="text" class="form-control" id="departure-aero" placeholder=" " maxlength="4" pattern="[A-Za-z]{4}" required>
+              <!-- <input type="text" class="form-control" id="departure-aero" placeholder=" " maxlength="4" pattern="[A-Za-z]{4}" required> -->
+              <input type="text" class="form-control" id="departure-aero" placeholder=" " required>
             </div>
 
             <div class="time">
@@ -152,7 +156,8 @@
             <div class="departure-aero">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlTextarea1" class="form-label">EOBT</label>
-              <input type="text" class="form-control" id="eobt" placeholder=" " pattern="[A-Za-z]{4}" required>
+              <!-- <input type="text" class="form-control" id="eobt" placeholder=" " pattern="[A-Za-z]{4}" required> -->
+              <input type="text" class="form-control" id="eobt" placeholder=" "required>
             </div>
           </div>
 
@@ -160,7 +165,8 @@
             <div class="number">
               <!-- <div class="long-line"></div> -->
               <label for="exampleFormControlInput1" class="form-label">16 DESTINATION AERODROME</label>
-              <input type="number" class="form-control" id="destination" placeholder=" " required pattern="[A-Za-z]{4}">
+              <!-- <input type="number" class="form-control" id="destination" placeholder=" " required pattern="[A-Za-z]{4}"> -->
+              <input type="text" class="form-control" id="destination" placeholder=" " required>
             </div>
 
             <div class="type-of-aircraft">
@@ -170,7 +176,8 @@
 
             <div class="wake">
               <label for="exampleFormControlInput1" class="form-label">ALTN AERODROME</label>
-              <input type="text" class="form-control" id="alt_aerodome" placeholder=" " pattern="[A-Za-z]{4}" required>
+              <!-- <input type="text" class="form-control" id="alt_aerodome" placeholder=" " pattern="[A-Za-z]{4}" required> -->
+              <input type="text" class="form-control" id="alt_aerodome" placeholder=" " required>
             </div>
 
             <div class="equipment">
@@ -199,7 +206,8 @@
                 <label for="exampleFormControlInput1" class="form-label">19 ENDURANCE</label>
                 <div style="display: flex;">
                   <h3 style="margin-right: 10px; width: 100px;"> - E / </h3>
-                  <input type="text" class="form-control input" id="endurance" placeholder=" " pattern="^(0[0-9]|1[0-9]|2[0-3])[0-5][0-9]$">
+                  <!-- <input type="text" class="form-control input" id="endurance" placeholder=" " pattern="^(0[0-9]|1[0-9]|2[0-3])[0-5][0-9]$"> -->
+                  <input type="text" class="form-control input" id="endurance" placeholder=" ">
                 </div>
               </div>
   
@@ -207,7 +215,8 @@
                 <label for="exampleFormControlInput1" class="form-label">PERSONS ON BOARD</label>
                 <div style="display: flex;">
                   <h3 style="margin-right: 10px; width: 100px;"> -> p / </h3>
-                  <input type="text" class="form-control input" id="person-on-board" placeholder=" " required pattern="[0-9]{4}" maxlength="4">
+                  <!-- <input type="number" class="form-control input" id="person-on-board" placeholder=" " required maxlength="4"> -->
+                  <input type="number" class="form-control input" id="person-on-board" placeholder=" " required>
                 </div>
               </div>
             </div>
@@ -328,7 +337,8 @@
               <label style="display: block;" for="exampleFormControlInput1" class="form-label" >DINGES</label>
               <div style="display: flex; justify-content: center;">
                 <h3>-> </h3>
-                <input  class="form-control" type="text" id="dinges" pattern="[0-9]{2}" maxlength="2" required>
+                <!-- <input  class="form-control" type="text" id="dinges" pattern="[0-9]{2}" maxlength="2" required> -->
+                <input  class="form-control" type="number" id="dinges" required>
               </div>  
             </div>
             <div class="number">
@@ -340,7 +350,8 @@
               <label  for="exampleFormControlInput1" class="form-label">CAPACITY</label>
               <div style="display: flex; justify-content: center;">
                 <h3 style="width: 50px;">-> </h3>
-                <input  class="form-control" type="text" id="capacity" maxlength="3" pattern="[0-9]{4}" required>
+                <!-- <input  class="form-control" type="text" id="capacity" maxlength="4" pattern="[0-9]{4}" required> -->
+                <input  class="form-control" type="number" id="capacity" required>
               </div>
             </div>
 
@@ -356,7 +367,8 @@
               <label for="exampleFormControlInput1" class="form-label">COLOR</label>
               <div class="color-field">
                 <h3 style="margin-right: 10px; width: 50px;">-> </h3>
-                <input type="text" class="form-control" id="color" placeholder=" " pattern="[A-Za-z]" required>
+                <!-- <input type="text" class="form-control" id="color" placeholder=" " pattern="[A-Za-z]" required> -->
+                <input type="text" class="form-control" id="color" placeholder=" " required>
                 <h2 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px; padding-top: 5px;">&equiv;</span> 
                  </h2>
@@ -369,7 +381,8 @@
               <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label">AIRCRAFT COLOUR AND MARKINGS</label>
              <div style="display: flex;">
               <h2 style="width: 50px; margin-right: 5px;">a /</h2>
-              <input type="text" class="form-control" id="acm" placeholder=" " pattern="[A-Za-z]" required>
+              <!-- <input type="text" class="form-control" id="acm" placeholder=" " pattern="[A-Za-z]" required> -->
+              <input type="text" class="form-control" id="acm" placeholder=" " required>
              </div>
               
             </div>
@@ -378,7 +391,8 @@
               <label style="margin-left: 50px;" for="exampleFormControlInput1" class="form-label" >REMARKS</label>
               <div style="display: flex;">
                 <h2 style="width: 50px; margin-right: 5px;">n /</h2>
-                <input type="text" class="form-control" id="remarks" placeholder=" "pattern="[A-Za-z]" required>
+                <!-- <input type="text" class="form-control" id="remarks" placeholder=" "pattern="[A-Za-z]" required> -->
+                <input type="text" class="form-control" id="remarks" placeholder=" " required>
                 <h3 style="width: 50px; display: flex; margin-left: 5px;">&lt;&lt;
                   <span style="display: flex; align-self: center; font-size: 15px;">&equiv;</span> 
                  </h3>
@@ -409,7 +423,7 @@
         </div>
       </div>
       <div class="submit-btn">
-        <button class="submit" type="submit">verify</button>
+        <button class="submit" type="submit" onclick="checkValue()">verify</button>
       </div>
     </form>
    
@@ -436,7 +450,7 @@
 
       form.classList.add('was-validated')
 
-      checkValue();
+      // checkValue();
     }, false)
   })
 })()
@@ -462,76 +476,98 @@ const survival_equip = [];
 const jackets = [];
 const dinges = ['01', '06', '08'];
 const capacity = ['12', '180', '300'];
-const aircraft_color = ['YELLOW', 'WHITE', 'Red '];
+const aircraft_color = ['YELLOW', 'WHITE', 'Red'];
 const aircraft_color_and_markings = ['WHITE AND BLACK', 'RED AND WHITE', 'YELLOW BLUE AND GREEN', 'RED YELLOW AND BLUE', 'White with Green and Blue stripes', 'Red and White'];
-const pilot = ['CAPT. JI CHANG WOOK ATPL 101010', 'CAPT. LEE MIN HO / ATPL 123456', 'Capt. Alexa Dulcero 123456- ATPL', 'CAPT. DANIELLE SAJOR 234567- ATPL' , 'Capt. Ernest Jr. Delos Santos 456789- ATPL', 'Capt. Trixie Marasigan 123456 - ATP'];
+const pilot = ['CAPT. JI CHANG WOOK ATPL 101010', 'CAPT. LEE MIN HO / ATPL 123456', 'Capt. Alexa Dulcero 123456- ATPL', 'CAPT. DANIELLE SAJOR 234567- ATPL' , 'Capt. Ernest Jr. Delos Santos 456789- ATPL', 'Capt. Trixie Marasigan 123456 - ATPL'];
 const remarks = ['PHILJETS AERO CHARTER CORPORATION / AOC NUMBER 123456', 'RMK/MEDEVAC', 'MEDEVAC', 'SCHEDULED AIR SERVICE', 'NON SCHEDULED AIR SERVICE'];
-
-
-const date_of_flight_field                = document.getElementById('filling-time').value;
-const aircraft_id_field                   = document.getElementById('aircraft-id').value;
-const flight_rules_field                  = document.getElementById('flight-rules').value;
-const type_of_flight_field                = document.getElementById('type-of-flight').value;
-const type_of_aircraft_field              = document.getElementById('type-of-aircraft').value;
-const equipment_field                     = document.getElementById('equipment').value;
-const departure_aerodome_field            = document.getElementById('departure-aero').value;
-const time_field                          = document.getElementById('time').value;
-const cruising_speed_field                = document.getElementById('cruising-speed').value;
-const flight_lvl_field                    = document.getElementById('level').value;
-const route_field                         = document.getElementById('eobt').value;
-const destination_field                   = document.getElementById('destination').value;
-const alt_aerodome_field                  = document.getElementById('alt_aerodome').value;
-const time_enroute_field                  = document.getElementById('total_eet').value;
-const fuel_endurance_field                = document.getElementById('endurance').value;
-const persons_on_board_field              = document.getElementById('person-on-board').value;
-// const emergency_radio_field               = document.getElementById('inputField').value;
-// const survival_equip_field                = document.getElementById('inputField').value;
-// const jackets_field                       = document.getElementById('inputField').value;
-const dinges_field                        = document.getElementById('dinges').value;
-const capacity_field                      = document.getElementById('capacity').value;
-const aircraft_color_field                = document.getElementById('color').value;
-const aircraft_color_and_markings_field   = document.getElementById('acm').value;
-const pilot_field                         = document.getElementById('pilot').value;
-const remarks_field                       = document.getElementById('remarks').value;
-
-
 
 // Function to check if a value exists in the list (case-sensitive or case-insensitive)
 function checkValue() {
 
+  const date_of_flight_field                = document.getElementById('filling-time').value;
+  const aircraft_id_field                   = document.getElementById('aircraft-id').value;
+  const flight_rules_field                  = document.getElementById('flight-rules').value;
+  const type_of_flight_field                = document.getElementById('type-of-flight').value;
+  const type_of_aircraft_field              = document.getElementById('type-of-aircraft').value;
+  const equipment_field                     = document.getElementById('equipment').value;
+  const departure_aerodome_field            = document.getElementById('departure-aero').value;
+  const time_field                          = document.getElementById('time').value;
+  const cruising_speed_field                = document.getElementById('cruising-speed').value;
+  const flight_lvl_field                    = document.getElementById('level').value;
+  const route_field                         = document.getElementById('eobt').value;
+  const destination_field                   = document.getElementById('destination').value;
+  const alt_aerodome_field                  = document.getElementById('alt_aerodome').value;
+  const time_enroute_field                  = document.getElementById('total_eet').value;
+  const fuel_endurance_field                = document.getElementById('endurance').value;
+  const persons_on_board_field              = document.getElementById('person-on-board').value;
+  // const emergency_radio_field               = document.getElementById('inputField').value;
+  // const survival_equip_field                = document.getElementById('inputField').value;
+  // const jackets_field                       = document.getElementById('inputField').value;
+  const dinges_field                        = document.getElementById('dinges').value;
+  const capacity_field                      = document.getElementById('capacity').value;
+  const aircraft_color_field                = document.getElementById('color').value;
+  const aircraft_color_and_markings_field   = document.getElementById('acm').value;
+  const pilot_field                         = document.getElementById('pilot').value;
+  const remarks_field                       = document.getElementById('remarks').value;
+
+  
+// console.log(date_of_flight_field);
+// console.log(aircraft_id_field);
+// console.log(flight_rules_field);
+// console.log(type_of_flight_field);
+// console.log(type_of_aircraft_field);
+// console.log(equipment_field);
+// console.log(departure_aerodome_field);
+// console.log(time_field);
+// console.log(cruising_speed_field);
+// console.log(flight_lvl_field);
+// console.log(route_field);
+// console.log(destination_field);
+// console.log(alt_aerodome_field);
+// console.log(time_enroute_field);
+// console.log(fuel_endurance_field);
+// console.log(persons_on_board_field);
+// console.log(dinges_field);
+// console.log(capacity_field);
+// console.log(aircraft_color_field);
+// console.log(pilot_field);
+// console.log(remarks_field);
   // Collect non-matching values
   const nonMatchingValues = [];
   // Check if the input value is in the list (case-sensitive)
-  
-  if (!date_of_flight.includes(date_of_flight_field) && !date_of_flight.some(item => item.toLowerCase() === date_of_flight_field.toLowerCase())) {
+  var date_of_flight_formatted = convertDateFormat(date_of_flight_field);
+  var time_formatted = convertTimeFormat(time_field);
+  var time_enroute_formatted = convertTimeFormat(time_enroute_field);
+  console.log(time_enroute_formatted);
+  if (!date_of_flight.includes(date_of_flight_formatted.trim()) && !date_of_flight.some(item => item.toLowerCase() === date_of_flight_formatted.toLowerCase())) {
     nonMatchingValues.push('FILLING TIME');
   }
 
-  if (!aircraft_id.includes(aircraft_id_field) && !aircraft_id.some(item => item.toLowerCase() === aircraft_id_field.toLowerCase())) {
+  if (!aircraft_id.includes(aircraft_id_field.trim()) && !aircraft_id.some(item => item.toLowerCase() === aircraft_id_field.toLowerCase().trim())) {
     nonMatchingValues.push('AIRCRAFT IDENTIFICATION');
   }
 
-  if (!flight_rules.includes(flight_rules_field) && !flight_rules.some(item => item.toLowerCase() === flight_rules_field.toLowerCase())) {
+  if (!flight_rules.includes(flight_rules_field.trim()) && !flight_rules.some(item => item.toLowerCase() === flight_rules_field.toLowerCase().trim())) {
     nonMatchingValues.push('FLIGHT RULES');
   }
 
-  if (!type_of_flight.includes(type_of_flight_field) && !type_of_flight.some(item => item.toLowerCase() === type_of_flight_field.toLowerCase())) {
+  if (!type_of_flight.includes(type_of_flight_field.trim()) && !type_of_flight.some(item => item.toLowerCase() === type_of_flight_field.toLowerCase().trim())) {
     nonMatchingValues.push('TYPE OF FLIGHT');
   }
 
-  if (!type_of_aircraft.includes(type_of_aircraft_field) && !type_of_aircraft.some(item => item.toLowerCase() === type_of_aircraft_field.toLowerCase())) {
+  if (!type_of_aircraft.includes(type_of_aircraft_field.trim()) && !type_of_aircraft.some(item => item.toLowerCase() === type_of_aircraft_field.toLowerCase().trim())) {
     nonMatchingValues.push('TYPE OF AIRCRAFT');
   }
 
-  if (!equipment.includes(equipment_field) && !equipment.some(item => item.toLowerCase() === equipment_field.toLowerCase())) {
+  if (!equipment.includes(equipment_field.trim()) && !equipment.some(item => item.toLowerCase() === equipment_field.toLowerCase().trim())) {
     nonMatchingValues.push('EQUIPMENT');
   }
 
-  if (!departure_aerodome.includes(departure_aerodome_field) && !departure_aerodome.some(item => item.toLowerCase() === departure_aerodome_field.toLowerCase())) {
+  if (!departure_aerodome.includes(departure_aerodome_field.trim()) && !departure_aerodome.some(item => item.toLowerCase() === departure_aerodome_field.toLowerCase().trim())) {
     nonMatchingValues.push('DEPARTURE AERODOME');
   }
 
-  if (!cruising_speed.includes(cruising_speed_field) && !cruising_speed.some(item => item.toLowerCase() === cruising_speed_field.toLowerCase())) {
+  if (!cruising_speed.includes(cruising_speed_field.trim()) && !cruising_speed.some(item => item.toLowerCase() === cruising_speed_field.toLowerCase().trim())) {
     nonMatchingValues.push('CRUISING SPEED');
   }
 
@@ -539,31 +575,31 @@ function checkValue() {
   //   nonMatchingValues.push(time_field);
   // }
 
-  if (!flight_lvl.includes(flight_lvl_field) && !flight_lvl.some(item => item.toLowerCase() === flight_lvl_field.toLowerCase())) {
+  if (!flight_lvl.includes(flight_lvl_field.trim()) && !flight_lvl.some(item => item.toLowerCase() === flight_lvl_field.toLowerCase().trim())) {
     nonMatchingValues.push('FLIGHT LEVEL');
   }
 
-  if (!route.includes(route_field) && !route.some(item => item.toLowerCase() === route_field.toLowerCase())) {
+  if (!route.includes(route_field.trim()) && !route.some(item => item.toLowerCase() === route_field.toLowerCase().trim())) {
     nonMatchingValues.push('EOBT');
   }
 
-  if (!destination.includes(destination_field) && !destination.some(item => item.toLowerCase() === destination_field.toLowerCase())) {
+  if (!destination.includes(destination_field.trim()) && !destination.some(item => item.toLowerCase() === destination_field.toLowerCase().trim())) {
     nonMatchingValues.push('DESTINATION');
   }
 
-  if (!alt_aerodome.includes(alt_aerodome_field) && !alt_aerodome.some(item => item.toLowerCase() === alt_aerodome_field.toLowerCase())) {
+  if (!alt_aerodome.includes(alt_aerodome_field.trim()) && !alt_aerodome.some(item => item.toLowerCase() === alt_aerodome_field.toLowerCase().trim())) {
     nonMatchingValues.push('ALT AERODOME');
   }
 
-  if (!time_enroute.includes(time_enroute_field) && !time_enroute.some(item => item.toLowerCase() === time_enroute_field.toLowerCase())) {
+  if (!time_enroute.includes(time_enroute_formatted.trim()) && !time_enroute.some(item => item.toLowerCase() === time_enroute_formatted.toLowerCase().trim())) {
     nonMatchingValues.push('TIME ENROUTE');
   }
 
-  if (!fuel_endurance.includes(fuel_endurance_field) && !fuel_endurance.some(item => item.toLowerCase() === fuel_endurance_field.toLowerCase())) {
+  if (!fuel_endurance.includes(fuel_endurance_field.trim()) && !fuel_endurance.some(item => item.toLowerCase() === fuel_endurance_field.toLowerCase().trim())) {
     nonMatchingValues.push('FUEL ENDURANCE');
   }
 
-  if (!persons_on_board.includes(persons_on_board_field) && !persons_on_board.some(item => item.toLowerCase() === persons_on_board_field.toLowerCase())) {
+  if (!persons_on_board.includes(persons_on_board_field.trim()) && !persons_on_board.some(item => item.toLowerCase() === persons_on_board_field.toLowerCase().trim())) {
     nonMatchingValues.push('PERSONS ON BOARD');
   }
 
@@ -579,26 +615,26 @@ function checkValue() {
   //   nonMatchingValues.push(jackets_field);
   // }
 
-  if (!dinges.includes(dinges_field) && !dinges.some(item => item.toLowerCase() === dinges_field.toLowerCase())) {
+  if (!dinges.includes(dinges_field.trim()) && !dinges.some(item => item.toLowerCase() === dinges_field.toLowerCase().trim())) {
     nonMatchingValues.push('DINGES');
   }
 
-  if (!capacity.includes(capacity_field) && !capacity.some(item => item.toLowerCase() === capacity_field.toLowerCase())) {
+  if (!capacity.includes(capacity_field.trim()) && !capacity.some(item => item.toLowerCase() === capacity_field.toLowerCase().trim())) {
     nonMatchingValues.push('CAPACITY');
   }
 
-  if (!aircraft_color.includes(aircraft_color_field) && !aircraft_color.some(item => item.toLowerCase() === aircraft_color_field.toLowerCase())) {
+  if (!aircraft_color.includes(aircraft_color_field.trim()) && !aircraft_color.some(item => item.toLowerCase() === aircraft_color_field.toLowerCase().trim())) {
     nonMatchingValues.push('AIRCRAFT COLOR');
   }
 
-  if (!aircraft_color_and_markings.includes(aircraft_color_and_markings_field) && !aircraft_color_and_markings.some(item => item.toLowerCase() === aircraft_color_and_markings_field.toLowerCase())) {
+  if (!aircraft_color_and_markings.includes(aircraft_color_and_markings_field.trim()) && !aircraft_color_and_markings.some(item => item.toLowerCase() === aircraft_color_and_markings_field.toLowerCase().trim())) {
     nonMatchingValues.push('AIRCRAFT COLOR AND MARKINGS');
   }
 
-  if (!pilot.includes(pilot_field) && !pilot.some(item => item.toLowerCase() === pilot_field.toLowerCase())) {
+  if (!pilot.includes(pilot_field.trim()) && !pilot.some(item => item.toLowerCase() === pilot_field.toLowerCase().trim())) {
     nonMatchingValues.push('PILOT');
   }
-  if (!remarks.includes(remarks_field) && !remarks.some(item => item.toLowerCase() === remarks_field.toLowerCase())) {
+  if (!remarks.includes(remarks_field.trim()) && !remarks.some(item => item.toLowerCase() === remarks_field.toLowerCase().trim())) {
     nonMatchingValues.push('REMARKS');
   }
   
@@ -613,6 +649,36 @@ function checkValue() {
 }
 
 
+function convertDateFormat(inputDate) {
+    // Parse the input date string into a Date object
+    var dateObject = new Date(inputDate);
+
+    // Extract individual components (month, day, year)
+    var month = (dateObject.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
+    var day = dateObject.getDate().toString().padStart(2, '0');
+    var year = dateObject.getFullYear().toString().slice(-2); // Extract the last two digits of the year
+
+    // Combine the components into the "mmddyy" format
+    var formattedDate = month + day + year;
+
+    return formattedDate;
+}
+
+function convertTimeFormat(inputTime) {
+    // Split the input time into hours and minutes
+    var timeComponents = inputTime.split(":");
+    var hours = timeComponents[0];
+    var minutes = timeComponents[1];
+
+    // Format hours and minutes with leading zeros
+    var formattedHours = hours.padStart(2, '0');
+    var formattedMinutes = minutes.padStart(2, '0');
+
+    // Combine the components into the "hhmm" format
+    var formattedTime = formattedHours + formattedMinutes;
+
+    return formattedTime;
+}
 </script>
 </body>
 </html>
